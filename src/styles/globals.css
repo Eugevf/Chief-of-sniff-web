@@ -1,0 +1,48 @@
+@import './tokens.css';
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-sage text-navy font-body antialiased;
+    line-height: 1.55;
+  }
+  h1, h2, h3 {
+    @apply font-display font-bold;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  :focus-visible {
+    outline: 3px solid var(--cheese);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
+  }
+}
+
+@layer components {
+  /* Highlighter underline used on hero <em> words */
+  .mark-cheese {
+    background: linear-gradient(transparent 58%, var(--cheese) 58%, var(--cheese) 92%, transparent 92%);
+  }
+}
+
+@layer components {
+  /* Legal document styling (Terms / Privacy) */
+  .legal-page h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 8px; }
+  .legal-page h2 { font-size: 1.3rem; margin: 32px 0 10px; font-family: var(--font-display); font-weight: 700; }
+  .legal-page p { color: var(--navy); margin-bottom: 12px; line-height: 1.6; }
+  .legal-page b { font-weight: 700; }
+  .legal-updated { color: var(--muted); font-size: 0.92rem; margin-bottom: 20px; }
+  .legal-warn {
+    background: var(--cheese-soft); border: 1px solid var(--cheese); border-radius: 14px;
+    padding: 16px 18px; font-size: 0.92rem; color: #7A5A0E; margin-bottom: 32px; font-weight: 600;
+  }
+}

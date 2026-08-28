@@ -1,0 +1,43 @@
+/* ============================================================
+   Chief of Sniff — Design tokens (source of truth)
+   These CSS variables mirror tailwind.config.ts. Consume them
+   through Tailwind classes (bg-navy, text-blue…) in components;
+   raw var() is only for cases Tailwind can't express.
+   Reuse this file verbatim in the product app.
+   ============================================================ */
+:root {
+  /* Brand */
+  --navy: #0D1B2A;
+  --navy-2: #122A45;
+  --blue: #0077E6;
+  --blue-dark: #0062BD;
+  --sky: #4DA8FF;
+  --cheese: #F2C14E;
+  --cheese-soft: #FBEBB9;
+
+  /* Surfaces */
+  --sage: #F5F7F2;
+  --sage-2: #EBEFE7;
+  --white: #FFFFFF;
+  --line: #D7DFD5;
+  --muted: #5C6B62;
+
+  /* WhatsApp */
+  --wa: #25D366;
+  --wa-dark: #1DA851;
+
+  /* Chat */
+  --chat-bg: #E4DDD3;
+  --bubble-in: #FFFFFF;
+  --bubble-out: #D6EAFF;
+
+  /* Type */
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+
+  /* Scale */
+  --radius-pill: 999px;
+  --radius-card: 20px;
+  --radius-xl2: 24px;
+  --max: 1180px;
+}
