@@ -8,6 +8,7 @@ import { HomePage } from '@/components/sections/Home'
 import { PricingPage } from '@/pages/PricingPage'
 import { FaqPage } from '@/pages/FaqPage'
 import { LegalPage } from '@/pages/LegalPage'
+import { DesignPage } from '@/pages/DesignPage'
 import { useHashRoute } from '@/lib/useHashRoute'
 
 export function App() {
@@ -27,6 +28,7 @@ export function App() {
         {route === '/terminos' && <LegalPage kind="terms" />}
         {route === '/privacidad' && <LegalPage kind="privacy" />}
         {route === '/cookies' && <LegalPage kind="cookies" />}
+        {route === '/design' && <DesignPage />}
       </main>
       <Footer onLogin={openLogin} onWaitlist={openWaitlist} />
       <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />

@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react'
 
-export type Route = '/' | '/precios' | '/preguntas' | '/terminos' | '/privacidad' | '/cookies'
-const ROUTES: Route[] = ['/', '/precios', '/preguntas', '/terminos', '/privacidad', '/cookies']
+export type Route = '/' | '/precios' | '/preguntas' | '/terminos' | '/privacidad' | '/cookies' | '/design'
+const ROUTES: Route[] = ['/', '/precios', '/preguntas', '/terminos', '/privacidad', '/cookies', '/design']
+
+// Allow plain-path deep links (chiefofsniff.com/design): fold the pathname into the hash once.
+const path = window.location.pathname.replace(/\/+$/, '') as Route
+if (ROUTES.includes(path) && path !== '/' && !window.location.hash) {
+  window.history.replaceState(null, '', `/#${path}`)
+}
 
 function current(): Route {
   const h = window.location.hash.replace(/^#/, '') as Route
