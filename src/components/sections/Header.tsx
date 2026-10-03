@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import logoIso from '@/assets/logo-iso.png'
 import { useI18n } from '@/i18n/LanguageContext'
-import { ButtonLink, Button } from '@/components/ui/Button'
-import { WhatsAppIcon } from '@/components/ui/icons'
+import { Button } from '@/components/ui/Button'
+import { NoseIcon } from '@/components/ui/icons'
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher'
-import { whatsappHref } from '@/lib/config'
 import { navigate, type Route } from '@/lib/useHashRoute'
 import { cn } from '@/lib/cn'
 
-export function Header({ route, onLogin }: { route: Route; onLogin: () => void }) {
+export function Header({ route, onLogin, onWaitlist }: { route: Route; onLogin: () => void; onWaitlist: () => void }) {
   const { t } = useI18n()
   const [open, setOpen] = useState(false)
   const links: { to: Route; label: string }[] = [
@@ -38,10 +37,9 @@ export function Header({ route, onLogin }: { route: Route; onLogin: () => void }
 
         <div className="flex items-center gap-2.5">
           <Button variant="ghost" size="sm" onClick={onLogin} className="max-md:hidden">{t.cta.login}</Button>
-          <ButtonLink variant="primary" size="sm" href={whatsappHref(t.hero.lead ? undefined : undefined)}
-            target="_blank" rel="noopener" className="max-md:hidden">
-            <WhatsAppIcon className="h-[18px] w-[18px]" />{t.cta.start}
-          </ButtonLink>
+          <Button variant="primary" size="sm" onClick={onWaitlist} className="group max-md:hidden">
+            <NoseIcon className="h-[18px] w-[18px] group-hover:animate-sniff" />{t.cta.start}
+          </Button>
           <LanguageSwitcher />
           <button className="grid h-11 w-11 place-items-center md:hidden" aria-label="Menú"
             onClick={() => setOpen((v) => !v)}>
@@ -56,8 +54,10 @@ export function Header({ route, onLogin }: { route: Route; onLogin: () => void }
             <button key={l.to} onClick={() => go(l.to)}
               className="block w-full border-b border-line py-3 text-left font-medium">{l.label}</button>
           ))}
-          <ButtonLink variant="primary" href={whatsappHref()} target="_blank" rel="noopener"
-            className="mt-3.5 w-full">{t.cta.start}</ButtonLink>
+          <Button variant="primary" onClick={() => { setOpen(false); onWaitlist() }}
+            className="group mt-3.5 w-full">
+            <NoseIcon className="h-[18px] w-[18px] group-hover:animate-sniff" />{t.cta.start}
+          </Button>
         </div>
       )}
     </header>

@@ -46,10 +46,18 @@ export default {
           '0%,80%,100%': { opacity: '.3' },
           '40%': { opacity: '1' },
         },
+        sniff: {
+          '0%,100%': { transform: 'none' },
+          '15%': { transform: 'translateY(-1.5px) scale(1.08) rotate(-6deg)' },
+          '35%': { transform: 'translateY(1px) scale(0.96) rotate(5deg)' },
+          '55%': { transform: 'translateY(-1px) scale(1.06) rotate(-4deg)' },
+          '75%': { transform: 'scale(1.02) rotate(2deg)' },
+        },
       },
       animation: {
         'bubble-in': 'bubble-in .35s ease forwards',
         blink: 'blink 1.2s infinite',
+        sniff: 'sniff .9s ease-in-out infinite',
       },
     },
   },

@@ -129,3 +129,25 @@ export const StarIcon = (p: SVGProps<SVGSVGElement>) => (
     <path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.8 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" />
   </svg>
 )
+
+export const InstagramIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}
+    strokeLinecap="round" strokeLinejoin="round" {...p}>
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4.2" />
+    <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none" />
+  </svg>
+)
+
+/** Dog nose for the waitlist CTA: nostrils + snout line. Animate with `group-hover:animate-sniff`. */
+export const NoseIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...p}>
+    <path d="M12 3.5c3.9 0 6.8 2.2 6.8 5.4 0 2.6-1.9 4.6-4.6 5.2l-1.2 4.6a1 1 0 0 1-2 0l-1.2-4.6c-2.7-.6-4.6-2.6-4.6-5.2 0-3.2 2.9-5.4 6.8-5.4zm-2.6 4a1.3 1.3 0 0 0-1.3 1.3c0 1 .7 2 1.6 2 .7 0 1-.5 1-1.2 0-1-.5-2.1-1.3-2.1zm5.2 0c-.8 0-1.3 1.1-1.3 2.1 0 .7.3 1.2 1 1.2.9 0 1.6-1 1.6-2a1.3 1.3 0 0 0-1.3-1.3z" />
+  </svg>
+)
+
+export const TikTokIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...p}>
+    <path d="M16.7 2c.4 2.3 1.9 3.9 4.3 4.1v3c-1.7 0-3.1-.5-4.3-1.4v6.5c0 3.7-2.5 6.3-6.1 6.3-3.4 0-6-2.5-6-5.9 0-3.4 2.7-6 6.3-5.8v3.1a3 3 0 0 0-1-.1c-1.5.1-2.4 1.2-2.4 2.8 0 1.6 1.3 2.8 3 2.8 1.9 0 3.1-1.3 3.1-3.3V2h3.1z" />
+  </svg>
+)

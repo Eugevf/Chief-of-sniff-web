@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { useI18n } from '@/i18n/LanguageContext'
-import { ButtonLink } from '@/components/ui/Button'
+import { Button } from '@/components/ui/Button'
 import { Eyebrow } from '@/components/ui/Eyebrow'
-import { whatsappHref } from '@/lib/config'
+import { NoseIcon } from '@/components/ui/icons'
 import { cn } from '@/lib/cn'
 
-export function FaqPage() {
+export function FaqPage({ onWaitlist }: { onWaitlist: () => void }) {
   const { t } = useI18n()
   const [open, setOpen] = useState<number | null>(null)
   return (
@@ -36,7 +36,9 @@ export function FaqPage() {
 
         <div className="mt-10 flex max-w-[800px] flex-wrap items-center justify-between gap-5 rounded-2xl border border-line bg-sage p-7">
           <div><strong>{t.faq.ctaTitle}</strong><br /><span className="text-muted">{t.faq.ctaBody}</span></div>
-          <ButtonLink href={whatsappHref()} target="_blank" rel="noopener">{t.faq.cta}</ButtonLink>
+          <Button onClick={onWaitlist} className="group">
+            <NoseIcon className="h-[18px] w-[18px] group-hover:animate-sniff" />{t.faq.cta}
+          </Button>
         </div>
       </div>
     </section>

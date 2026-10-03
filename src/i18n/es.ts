@@ -7,7 +7,7 @@ export const es: Content = {
     "faq": "Preguntas"
   },
   "cta": {
-    "start": "Empezar en WhatsApp",
+    "start": "Sumarme a la lista de espera",
     "login": "Entrar",
     "seeHow": "Ver cómo funciona"
   },
@@ -241,7 +241,7 @@ export const es: Content = {
   "band": {
     "title": "Tu perro ya tiene asistente. Solo falta que le escribas.",
     "body": "Un hola, su nombre y una foto de la cartilla. Con eso ya sabe qué le toca y cuándo.",
-    "cta": "Empezar en WhatsApp",
+    "cta": "Sumarme a la lista de espera",
     "note": "14 días gratis. Después, desde 4,99 € al mes."
   },
   "pricing": {
@@ -356,7 +356,7 @@ export const es: Content = {
     ],
     "ctaTitle": "¿Tienes otra duda?",
     "ctaBody": "Escríbenos por WhatsApp, te respondemos en el día.",
-    "cta": "Preguntar por WhatsApp"
+    "cta": "Sumarme a la lista de espera"
   },
   "footer": {
     "tagline": "El asistente personal de tu mascota. Amable, pero al punto.",
@@ -368,7 +368,7 @@ export const es: Content = {
       "pricing": "Precios",
       "faq": "Preguntas",
       "login": "Entrar",
-      "start": "Empezar en WhatsApp",
+      "start": "Sumarme a la lista de espera",
       "privacy": "Privacidad",
       "terms": "Términos",
       "cookies": "Cookies"
@@ -386,7 +386,35 @@ export const es: Content = {
     "okBody": "Te hemos enviado un código a {phone}. Caduca en 10 minutos.",
     "close": "Cerrar"
   },
+  "waitlist": {
+    "announceTitle": "¡Chief of Sniff estará disponible en noviembre!",
+    "announceBody": "Regístrate ahora y consigue tu primer mes gratis.",
+    "title": "Súmate a la lista de espera",
+    "firstName": "Nombre",
+    "lastName": "Apellidos",
+    "email": "Email",
+    "phone": "Teléfono",
+    "privacy": "Acepto la",
+    "privacyLink": "política de privacidad",
+    "submit": "Sumarme a la lista",
+    "sending": "Enviando…",
+    "okTitle": "¡Ya estás en la lista!",
+    "okBody": "Te avisaremos en cuanto Chief of Sniff esté disponible. Tu primer mes es gratis.",
+    "dupBody": "Este email ya está en la lista. ¡Nos vemos en noviembre!",
+    "errBody": "No hemos podido guardar tu registro. Inténtalo de nuevo en un momento.",
+    "invalid": "Revisa los campos marcados.",
+    "close": "Cerrar"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "body": "Usamos almacenamiento imprescindible para que la web funcione (recordar tu idioma y tu elección de cookies). Las de análisis solo se activarían si las aceptas; si las rechazas, todo sigue funcionando igual.",
+    "accept": "Aceptar todas",
+    "reject": "Rechazar",
+    "more": "Política de cookies",
+    "change": "Cambiar mi elección"
+  },
   "legal": {
+    "cookies": "<h1>Política de cookies</h1>\n<p class=\"legal-updated\">Última actualización: </p>\n\n<h2>1. Qué son las cookies</h2>\n<p>Las cookies y tecnologías similares (como el almacenamiento local del navegador) son pequeños archivos o registros que un sitio web guarda en tu dispositivo para funcionar o recordar tus preferencias.</p>\n\n<h2>2. Qué usamos en esta web</h2>\n<p><b>Imprescindibles</b> (no requieren consentimiento): usamos el almacenamiento local del navegador para recordar tu idioma (<b>cos_lang</b>) y tu elección sobre cookies (<b>cos_cookie_consent</b>). Se conservan hasta que borres los datos de navegación.</p>\n<p><b>De análisis</b>: actualmente esta web <b>no utiliza</b> cookies de análisis ni de publicidad. Si en el futuro las incorporamos, solo se activarán si las has aceptado, y actualizaremos esta política.</p>\n<p><b>De terceros</b>: esta web no instala cookies de terceros. Si haces clic en enlaces a WhatsApp, Instagram o TikTok, esas plataformas aplican sus propias políticas de cookies y privacidad.</p>\n\n<h2>3. Cómo cambiar tu elección</h2>\n<p>Puedes cambiar o retirar tu consentimiento en cualquier momento con el botón que hay al final de esta página, o borrando los datos del sitio desde la configuración de tu navegador.</p>\n\n<h2>4. Más información</h2>\n<p>Para saber cómo tratamos tus datos personales, consulta la <a href=\"#/privacidad\">política de privacidad</a>.</p>",
     "termsTitle": "Términos y condiciones",
     "privacyTitle": "Política de privacidad",
     "updated": "Última actualización",

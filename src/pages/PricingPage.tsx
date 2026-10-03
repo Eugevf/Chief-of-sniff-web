@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import { useI18n } from '@/i18n/LanguageContext'
-import { Button, ButtonLink } from '@/components/ui/Button'
+import { Button } from '@/components/ui/Button'
 import { Eyebrow } from '@/components/ui/Eyebrow'
-import { CheckIcon } from '@/components/ui/icons'
-import { whatsappHref } from '@/lib/config'
+import { CheckIcon, NoseIcon } from '@/components/ui/icons'
 import { cn } from '@/lib/cn'
 
-export function PricingPage() {
+export function PricingPage({ onWaitlist }: { onWaitlist: () => void }) {
   const { t, lang } = useI18n()
   const [yearly, setYearly] = useState(false)
   const unit = ({ es: ['año', 'mes'], en: ['yr', 'mo'], ca: ['any', 'mes'] } as const)[lang]
@@ -55,8 +54,10 @@ export function PricingPage() {
                   </li>
                 ))}
               </ul>
-              <ButtonLink variant={p.highlighted ? 'primary' : 'ghost'} href={whatsappHref()} target="_blank" rel="noopener"
-                className="mt-auto w-full">{p.cta}</ButtonLink>
+              <Button variant={p.highlighted ? 'primary' : 'ghost'} onClick={onWaitlist}
+                className="group mt-auto w-full">
+                <NoseIcon className="h-[18px] w-[18px] group-hover:animate-sniff" />{p.cta}
+              </Button>
             </div>
           ))}
         </div>

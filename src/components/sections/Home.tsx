@@ -1,11 +1,10 @@
 import { useI18n } from '@/i18n/LanguageContext'
-import { Button, ButtonLink } from '@/components/ui/Button'
+import { Button } from '@/components/ui/Button'
 import { Eyebrow } from '@/components/ui/Eyebrow'
 import { Stars } from '@/components/ui/Stars'
 import { PhoneChat } from './PhoneChat'
-import { whatsappHref } from '@/lib/config'
 import {
-  WhatsAppIcon, CheckCircleIcon,
+  NoseIcon, CheckCircleIcon,
   VetIcon, PuppyIcon, SunIcon, VaccineIcon, ScissorsIcon, PawIcon, HomeIcon, PillIcon, DocIcon, BagIcon,
 } from '@/components/ui/icons'
 import type { ReactNode } from 'react'
@@ -13,7 +12,7 @@ import type { ReactNode } from 'react'
 function html(s: string) { return <span dangerouslySetInnerHTML={{ __html: s }} /> }
 
 /* ---------- Hero ---------- */
-function Hero({ onLogin: _o }: { onLogin: () => void }) {
+function Hero({ onWaitlist }: { onWaitlist: () => void }) {
   const { t } = useI18n()
   return (
     <section className="py-[72px] pb-12">
@@ -25,9 +24,9 @@ function Hero({ onLogin: _o }: { onLogin: () => void }) {
           </h1>
           <p className="mb-[30px] max-w-[50ch] text-[1.2rem] text-muted">{t.hero.lead}</p>
           <div className="flex flex-wrap items-center gap-3">
-            <ButtonLink href={whatsappHref()} target="_blank" rel="noopener">
-              <WhatsAppIcon className="h-[18px] w-[18px]" />{t.cta.start}
-            </ButtonLink>
+            <Button onClick={onWaitlist} className="group">
+              <NoseIcon className="h-[18px] w-[18px] group-hover:animate-sniff" />{t.cta.start}
+            </Button>
             <Button variant="ghost" onClick={() => document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' })}>
               {t.cta.seeHow}
             </Button>
@@ -255,8 +254,28 @@ function Reviews() {
   )
 }
 
+/* ---------- Launch announcement ---------- */
+function LaunchBand({ onWaitlist }: { onWaitlist: () => void }) {
+  const { t } = useI18n()
+  return (
+    <section className="bg-navy py-12 text-white">
+      <div className="mx-auto flex max-w-content flex-wrap items-center justify-between gap-6 px-6">
+        <div>
+          <h2 className="mb-1.5 text-[clamp(1.5rem,2.8vw,2.1rem)]">
+            {t.waitlist.announceTitle}
+          </h2>
+          <p className="text-[1.05rem] opacity-85">{t.waitlist.announceBody}</p>
+        </div>
+        <Button variant="white" onClick={onWaitlist} className="group shrink-0">
+          <NoseIcon className="h-5 w-5 group-hover:animate-sniff" />{t.cta.start}
+        </Button>
+      </div>
+    </section>
+  )
+}
+
 /* ---------- CTA band ---------- */
-function Band() {
+function Band({ onWaitlist }: { onWaitlist: () => void }) {
   const { t } = useI18n()
   return (
     <div className="pb-24">
@@ -267,7 +286,9 @@ function Band() {
             <p className="text-[1.1rem] opacity-90">{t.band.body}</p>
           </div>
           <div className="relative z-10 flex flex-col items-start gap-3">
-            <ButtonLink variant="white" href={whatsappHref()} target="_blank" rel="noopener">{t.band.cta}</ButtonLink>
+            <Button variant="white" onClick={onWaitlist} className="group">
+              <NoseIcon className="h-5 w-5 group-hover:animate-sniff" />{t.band.cta}
+            </Button>
             <small className="opacity-80">{t.band.note}</small>
           </div>
           <span className="pointer-events-none absolute -bottom-[120px] -right-20 h-80 w-80 rounded-full bg-cheese opacity-[0.18]" />
@@ -277,10 +298,11 @@ function Band() {
   )
 }
 
-export function HomePage({ onLogin }: { onLogin: () => void }) {
+export function HomePage({ onWaitlist }: { onWaitlist: () => void }) {
   return (
     <>
-      <Hero onLogin={onLogin} />
+      <Hero onWaitlist={onWaitlist} />
+      <LaunchBand onWaitlist={onWaitlist} />
       <FeatureStrip />
       <HowItWorks />
       <Alerts />
@@ -288,7 +310,7 @@ export function HomePage({ onLogin }: { onLogin: () => void }) {
       <After />
       <Household />
       <Reviews />
-      <Band />
+      <Band onWaitlist={onWaitlist} />
     </>
   )
 }

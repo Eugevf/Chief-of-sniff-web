@@ -7,7 +7,7 @@ export const ca: Content = {
     "faq": "Preguntes"
   },
   "cta": {
-    "start": "Comença a WhatsApp",
+    "start": "Apunta'm a la llista d'espera",
     "login": "Entra",
     "seeHow": "Mira com funciona"
   },
@@ -241,7 +241,7 @@ export const ca: Content = {
   "band": {
     "title": "El teu gos ja té assistent. Només falta que li escriguis.",
     "body": "Un hola, el seu nom i una foto de la cartilla. Amb això ja sap què li toca i quan.",
-    "cta": "Comença a WhatsApp",
+    "cta": "Apunta'm a la llista d'espera",
     "note": "14 dies gratis. Després, des de 4,99 € al mes."
   },
   "pricing": {
@@ -356,7 +356,7 @@ export const ca: Content = {
     ],
     "ctaTitle": "Tens algun altre dubte?",
     "ctaBody": "Escriu-nos per WhatsApp, et responem el mateix dia.",
-    "cta": "Pregunta per WhatsApp"
+    "cta": "Apunta'm a la llista d'espera"
   },
   "footer": {
     "tagline": "L'assistent personal de la teva mascota. Amable, però al gra.",
@@ -368,7 +368,7 @@ export const ca: Content = {
       "pricing": "Preus",
       "faq": "Preguntes",
       "login": "Entra",
-      "start": "Comença a WhatsApp",
+      "start": "Apunta'm a la llista d'espera",
       "privacy": "Privacitat",
       "terms": "Termes",
       "cookies": "Cookies"
@@ -386,7 +386,35 @@ export const ca: Content = {
     "okBody": "T'hem enviat un codi a {phone}. Caduca en 10 minuts.",
     "close": "Tanca"
   },
+  "waitlist": {
+    "announceTitle": "Chief of Sniff estarà disponible al novembre!",
+    "announceBody": "Registra't ara i aconsegueix el teu primer mes gratis.",
+    "title": "Apunta't a la llista d'espera",
+    "firstName": "Nom",
+    "lastName": "Cognoms",
+    "email": "Email",
+    "phone": "Telèfon",
+    "privacy": "Accepto la",
+    "privacyLink": "política de privacitat",
+    "submit": "Apunta'm a la llista",
+    "sending": "Enviant…",
+    "okTitle": "Ja ets a la llista!",
+    "okBody": "T'avisarem tan bon punt Chief of Sniff estigui disponible. El teu primer mes és gratis.",
+    "dupBody": "Aquest email ja és a la llista. Ens veiem al novembre!",
+    "errBody": "No hem pogut desar el teu registre. Torna-ho a provar d'aquí a un moment.",
+    "invalid": "Revisa els camps marcats.",
+    "close": "Tanca"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "body": "Fem servir emmagatzematge imprescindible perquè el web funcioni (recordar el teu idioma i la teva elecció de cookies). Les d'anàlisi només s'activarien si les acceptes; si les rebutges, tot continua funcionant igual.",
+    "accept": "Accepta-les totes",
+    "reject": "Rebutja-les",
+    "more": "Política de cookies",
+    "change": "Canviar la meva elecció"
+  },
   "legal": {
+    "cookies": "<h1>Política de cookies</h1>\n<p class=\"legal-updated\">Última actualització: </p>\n\n<h2>1. Què són les cookies</h2>\n<p>Les cookies i tecnologies similars (com l'emmagatzematge local del navegador) són petits fitxers o registres que un web desa al teu dispositiu per funcionar o recordar les teves preferències.</p>\n\n<h2>2. Què fem servir en aquest web</h2>\n<p><b>Imprescindibles</b> (no requereixen consentiment): fem servir l'emmagatzematge local del navegador per recordar el teu idioma (<b>cos_lang</b>) i la teva elecció sobre cookies (<b>cos_cookie_consent</b>). Es conserven fins que esborris les dades de navegació.</p>\n<p><b>D'anàlisi</b>: actualment aquest web <b>no utilitza</b> cookies d'anàlisi ni de publicitat. Si en el futur les incorporem, només s'activaran si les has acceptades, i actualitzarem aquesta política.</p>\n<p><b>De tercers</b>: aquest web no instal·la cookies de tercers. Si fas clic en enllaços a WhatsApp, Instagram o TikTok, aquestes plataformes apliquen les seves pròpies polítiques de cookies i privacitat.</p>\n\n<h2>3. Com canviar la teva elecció</h2>\n<p>Pots canviar o retirar el teu consentiment en qualsevol moment amb el botó del final d'aquesta pàgina, o esborrant les dades del lloc des de la configuració del navegador.</p>\n\n<h2>4. Més informació</h2>\n<p>Per saber com tractem les teves dades personals, consulta la <a href=\"#/privacidad\">política de privacitat</a>.</p>",
     "termsTitle": "Termes i condicions",
     "privacyTitle": "Política de privacitat",
     "updated": "Última actualització",

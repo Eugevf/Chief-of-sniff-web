@@ -31,5 +31,12 @@ export interface Content {
   faq: { eyebrow: string; title: string; body: string; items: Faq[]; ctaTitle: string; ctaBody: string; cta: string }
   footer: { tagline: string; product: string; account: string; legal: string; links: { how: string; pricing: string; faq: string; login: string; start: string; privacy: string; terms: string; cookies: string }; copyright: string; disclaimer: string }
   login: { title: string; body: string; send: string; alt: string; altLink: string; okTitle: string; okBody: string; close: string }
-  legal: { termsTitle: string; privacyTitle: string; updated: string; terms: string; privacy: string }
+  waitlist: {
+    announceTitle: string; announceBody: string
+    title: string; firstName: string; lastName: string; email: string; phone: string
+    privacy: string; privacyLink: string; submit: string; sending: string
+    okTitle: string; okBody: string; dupBody: string; errBody: string; invalid: string; close: string
+  }
+  cookies: { title: string; body: string; accept: string; reject: string; more: string; change: string }
+  legal: { termsTitle: string; privacyTitle: string; updated: string; terms: string; privacy: string; cookies: string }
 }

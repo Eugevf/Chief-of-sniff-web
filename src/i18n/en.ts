@@ -7,7 +7,7 @@ export const en: Content = {
     "faq": "FAQ"
   },
   "cta": {
-    "start": "Start on WhatsApp",
+    "start": "Join the waitlist",
     "login": "Log in",
     "seeHow": "See how it works"
   },
@@ -241,7 +241,7 @@ export const en: Content = {
   "band": {
     "title": "Your dog already has an assistant. All that's left is for you to message it.",
     "body": "A hello, its name and a photo of the booklet. That's all it needs to know what's due and when.",
-    "cta": "Start on WhatsApp",
+    "cta": "Join the waitlist",
     "note": "14 days free. Then from €4.99 a month."
   },
   "pricing": {
@@ -356,7 +356,7 @@ export const en: Content = {
     ],
     "ctaTitle": "Got another question?",
     "ctaBody": "Message us on WhatsApp, we reply the same day.",
-    "cta": "Ask on WhatsApp"
+    "cta": "Join the waitlist"
   },
   "footer": {
     "tagline": "Your pet's personal assistant. Friendly, but to the point.",
@@ -368,7 +368,7 @@ export const en: Content = {
       "pricing": "Pricing",
       "faq": "FAQ",
       "login": "Log in",
-      "start": "Start on WhatsApp",
+      "start": "Join the waitlist",
       "privacy": "Privacy",
       "terms": "Terms",
       "cookies": "Cookies"
@@ -386,7 +386,35 @@ export const en: Content = {
     "okBody": "We've sent a code to {phone}. It expires in 10 minutes.",
     "close": "Close"
   },
+  "waitlist": {
+    "announceTitle": "Chief of Sniff will be available in November!",
+    "announceBody": "Sign up now and get your first month free.",
+    "title": "Join the waitlist",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "privacy": "I accept the",
+    "privacyLink": "privacy policy",
+    "submit": "Join the list",
+    "sending": "Sending…",
+    "okTitle": "You're on the list!",
+    "okBody": "We'll let you know as soon as Chief of Sniff is available. Your first month is free.",
+    "dupBody": "This email is already on the list. See you in November!",
+    "errBody": "We couldn't save your signup. Please try again in a moment.",
+    "invalid": "Check the highlighted fields.",
+    "close": "Close"
+  },
+  "cookies": {
+    "title": "Cookies",
+    "body": "We use essential storage to make this site work (remembering your language and your cookie choice). Analytics cookies would only be enabled if you accept them; if you reject them, everything keeps working.",
+    "accept": "Accept all",
+    "reject": "Reject",
+    "more": "Cookie policy",
+    "change": "Change my choice"
+  },
   "legal": {
+    "cookies": "<h1>Cookie policy</h1>\n<p class=\"legal-updated\">Last updated: </p>\n\n<h2>1. What cookies are</h2>\n<p>Cookies and similar technologies (such as the browser's local storage) are small files or records a website stores on your device to work properly or remember your preferences.</p>\n\n<h2>2. What we use on this site</h2>\n<p><b>Essential</b> (no consent required): we use the browser's local storage to remember your language (<b>cos_lang</b>) and your cookie choice (<b>cos_cookie_consent</b>). They are kept until you clear your browsing data.</p>\n<p><b>Analytics</b>: this site currently uses <b>no</b> analytics or advertising cookies. If we add them in the future, they will only run if you have accepted them, and we will update this policy.</p>\n<p><b>Third parties</b>: this site sets no third-party cookies. If you click through to WhatsApp, Instagram or TikTok, those platforms apply their own cookie and privacy policies.</p>\n\n<h2>3. Changing your choice</h2>\n<p>You can change or withdraw your consent at any time using the button at the bottom of this page, or by clearing this site's data in your browser settings.</p>\n\n<h2>4. More information</h2>\n<p>To learn how we handle your personal data, see the <a href=\"#/privacidad\">privacy policy</a>.</p>",
     "termsTitle": "Terms and conditions",
     "privacyTitle": "Privacy policy",
     "updated": "Last updated",
