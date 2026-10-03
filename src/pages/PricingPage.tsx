@@ -8,7 +8,10 @@ import { cn } from '@/lib/cn'
 export function PricingPage({ onWaitlist }: { onWaitlist: () => void }) {
   const { t, lang } = useI18n()
   const [yearly, setYearly] = useState(false)
-  const unit = ({ es: ['año', 'mes'], en: ['yr', 'mo'], ca: ['any', 'mes'] } as const)[lang]
+  const unit = ({
+    es: ['año', 'mes'], en: ['yr', 'mo'], ca: ['any', 'mes'],
+    fr: ['an', 'mois'], it: ['anno', 'mese'], de: ['Jahr', 'Monat'], pt: ['ano', 'mês'],
+  } as const)[lang]
 
   return (
     <section className="py-24">

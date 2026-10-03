@@ -1,4 +1,4 @@
-export type Lang = 'es' | 'en' | 'ca'
+export type Lang = 'es' | 'en' | 'ca' | 'fr' | 'it' | 'de' | 'pt'
 
 export interface Feature { text: string }
 export interface Beat { kicker: string; title: string; body: string }

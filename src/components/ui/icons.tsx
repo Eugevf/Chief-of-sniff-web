@@ -142,7 +142,7 @@ export const InstagramIcon = (p: SVGProps<SVGSVGElement>) => (
 /** Dog nose for the waitlist CTA: nostrils + snout line. Animate with `group-hover:animate-sniff`. */
 export const NoseIcon = (p: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...p}>
-    <path d="M12 3.5c3.9 0 6.8 2.2 6.8 5.4 0 2.6-1.9 4.6-4.6 5.2l-1.2 4.6a1 1 0 0 1-2 0l-1.2-4.6c-2.7-.6-4.6-2.6-4.6-5.2 0-3.2 2.9-5.4 6.8-5.4zm-2.6 4a1.3 1.3 0 0 0-1.3 1.3c0 1 .7 2 1.6 2 .7 0 1-.5 1-1.2 0-1-.5-2.1-1.3-2.1zm5.2 0c-.8 0-1.3 1.1-1.3 2.1 0 .7.3 1.2 1 1.2.9 0 1.6-1 1.6-2a1.3 1.3 0 0 0-1.3-1.3z" />
+    <path fillRule="evenodd" d="M12 5c6 0 10 2.4 10 5.6 0 3.4-4.5 6.9-8.6 8.6a3.4 3.4 0 0 1-2.8 0C6.5 17.5 2 14 2 10.6 2 7.4 6 5 12 5zM9.6 8c1 .6 1.3 2 .7 3.4-.6 1.4-1.9 2.1-2.9 1.5-1-.6-1-2.1-.2-3.4C7.9 8.3 8.8 7.6 9.6 8zm4.8 0c1-.6 1.9.3 2.6 1.5.8 1.3.8 2.8-.2 3.4-1 .6-2.3-.1-2.9-1.5-.6-1.4-.3-2.8.5-3.4z" />
   </svg>
 )
 
